@@ -1,0 +1,73 @@
+        html,
+        body {
+            margin: 0;
+        }
+        
+        #imagem_fundo {
+            background: url(foto-fundo.jpg);
+            background-size: cover;
+            background-position-y: -75px;
+            height: 100%;
+            text-align: center;
+        }
+        
+        #titulo {
+            color: rgb(234, 89, 17);
+            padding-top: 26%;
+            font-size: 60px;
+        }
+        
+        #subtitulo {
+            color: black;
+            padding-left: 30%;
+            padding-right: 20%;
+        }
+        
+        #acao {
+            color: black;
+            border: 2px black solid;
+            padding: 10px 20px 0px 20px;
+        }
+        
+        #projeto {
+            background-color: rgb(247, 239, 239);
+            padding: 20px;
+            display: flex;
+            text-align: justify;
+        }
+        
+        #objetivo {
+            background-color: rgb(247, 239, 239);
+            padding: 20px;
+            padding-left: 20%;
+        }
+        
+        #ODS2 {
+            background-color: rgb(247, 239, 239);
+            padding: 20px;
+            text-align: justify;
+        }
+        
+        #estado {
+            background-color: rgb(247, 239, 239);
+            padding: 20px 40px;
+            text-align: justify;
+        }
+        
+        #chamada {
+            background-color: rgb(247, 239, 239);
+            padding: 20px;
+        }
+        
+        #chamada1 {
+            font-size: 45px;
+        }
+        
+        #chamada2 {
+            font-size: 30px;
+        }
+        
+        .coluna {
+            padding: 0 5%;
+            width: 40%;
+        }
