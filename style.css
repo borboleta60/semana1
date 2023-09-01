@@ -1,73 +1,165 @@
-        html,
-        body {
-            margin: 0;
-        }
-        
-        #imagem_fundo {
-            background: url(foto-fundo.jpg);
-            background-size: cover;
-            background-position-y: -75px;
-            height: 100%;
-            text-align: center;
-        }
-        
-        #titulo {
-            color: rgb(234, 89, 17);
-            padding-top: 26%;
-            font-size: 60px;
-        }
-        
-        #subtitulo {
-            color: black;
-            padding-left: 30%;
-            padding-right: 20%;
-        }
-        
-        #acao {
-            color: black;
-            border: 2px black solid;
-            padding: 10px 20px 0px 20px;
-        }
-        
-        #projeto {
-            background-color: rgb(247, 239, 239);
-            padding: 20px;
-            display: flex;
-            text-align: justify;
-        }
-        
-        #objetivo {
-            background-color: rgb(247, 239, 239);
-            padding: 20px;
-            padding-left: 20%;
-        }
-        
-        #ODS2 {
-            background-color: rgb(247, 239, 239);
-            padding: 20px;
-            text-align: justify;
-        }
-        
-        #estado {
-            background-color: rgb(247, 239, 239);
-            padding: 20px 40px;
-            text-align: justify;
-        }
-        
-        #chamada {
-            background-color: rgb(247, 239, 239);
-            padding: 20px;
-        }
-        
-        #chamada1 {
-            font-size: 45px;
-        }
-        
-        #chamada2 {
-            font-size: 30px;
-        }
-        
-        .coluna {
-            padding: 0 5%;
-            width: 40%;
-        }
+html,
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 120px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 5%;
+    position: absolute;
+}
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+
+#menu li {
+    float: left;
+    margin: 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu li:hover {
+    background-color: #01AAEA;
+}
+
+#imagem_fundo {
+    background: url(foto-fundo.jpg);
+    background-size: cover;
+    background-position-y: -75px;
+    height: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#titulo {
+    color: rgb(234, 89, 17);
+    padding-top: 26%;
+    font-size: 60px;
+}
+
+#subtitulo {
+    color: black;
+    padding-left: 30%;
+    padding-right: 20%;
+}
+
+#acao {
+    color: black;
+    border: 2px black solid;
+    padding: 10px 20px 0px 20px;
+}
+
+#projeto {
+    background-color: rgb(247, 239, 239);
+    padding: 60px;
+    display: flex;
+    text-align: justify;
+}
+
+#objetivo {
+    background-color: rgb(247, 239, 239);
+    padding: 20px;
+}
+
+#ODS2 {
+    background-color: rgb(247, 239, 239);
+    padding: 30px 60px 30px 40px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+#videofome {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 239, 239);
+}
+
+#estado {
+    background-color: rgb(247, 239, 239);
+    padding: 20px 80px 40px 20px;
+    text-align: justify;
+}
+
+#chamada {
+    background-color: rgb(247, 239, 239);
+    padding: 20px;
+}
+
+#chamada1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+#chamada2 {
+    font-size: 30px;
+}
+
+#chamada3 {
+    font-size: 20px;
+}
+
+.coluna,
+colunavideo {
+    padding: 0 5%;
+    width: 40%;
+}
+
+#descricao {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-top: 5px solid coral;
+    background-color: #8bebf7;
+}
+
+.final {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgnegocio {
+    width: 35%;
+}
+
+@media (max-width:768px) {
+    #menu {
+        visibility: hidden;
+    }
+    #projeto {
+        display: block;
+        padding: 20px;
+    }
+    .coluna {
+        padding: zero;
+        width: 90%;
+    }
+    .colunavideo {
+        display: flex;
+    }
+    #imagem_fundo {
+        background-position: -1px;
+    }
+    #objetivo {
+        padding-top: 8px;
+    }
+    #logo {
+        margin-left: 40%;
+    }
+}
